@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -49,45 +54,44 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-        
+
         macro1: macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H &kp G &kp A>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp G &kp A>;
         };
-        
+
         macro2: macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp H>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp H>;
         };
-        
+
         macro3: macro3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp F>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp F>;
         };
-        
+
         macro4: macro4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp O>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp O>;
         };
-        
+
         macro5: macro5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H &kp F &kp C>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp F &kp C>;
         };
-        
+
         macro6: macro6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LEFT_ALT &kp H>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp H>;
         };
     };
 
-    
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -115,19 +119,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6  &macro5                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp ESC        &macro4            &macro3          &macro2  &macro1  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LEFT_GUI   &trans             &trans           &trans   &trans   &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans         &trans             &trans           &trans   &trans   &trans      &trans   &trans                          &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp KP_NUMBER_9             &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUMBER_6  &kp KP_NUMBER_5                                               &kp CARET          &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp KP_NUMBER_4             &kp KP_NUMBER_3  &kp KP_NUMBER_2  &kp KP_NUMBER_1  &kp KP_NUMBER_0  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp SEMICOLON      &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp EQUAL                    &trans          &kp LS(SEMICOLON)  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans           &trans                       &trans          &trans                                                                      &kp PIPE
             >;
         };
 
