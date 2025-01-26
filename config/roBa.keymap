@@ -51,6 +51,13 @@
         };
     };
 
+    macros {
+        alt_h_g_macro: alt_h_g_macro {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO1";
+            bindings = <&kp LEFT_ALT &kp H &kp G &kp A>;
+        };
+    };
 
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
