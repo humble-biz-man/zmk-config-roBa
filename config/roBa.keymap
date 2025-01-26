@@ -51,6 +51,15 @@
         };
     };
 
+    macros {
+        MACRO1: MACRO1 {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_press &kp LALT &kp H &kp G &kp A>;
+            label = "MACRO1";
+        };
+    };
+
+
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
