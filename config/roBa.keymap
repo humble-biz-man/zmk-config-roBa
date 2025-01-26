@@ -54,42 +54,42 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H &kp G &kp A>;
-            label = "MACRO1";
+            // label = "MACRO1";
         };
         
         macro2: macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp H>;
-            label = "MACRO2";
+            // label = "MACRO2";
         };
         
         macro3: macro3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp F>;
-            label = "MACRO3";
+            // label = "MACRO3";
         };
         
         macro4: macro4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp O>;
-            label = "MACRO4";
+            // label = "MACRO4";
         };
         
         macro5: macro5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H &kp F &kp C>;
-            label = "MACRO5";
+            // label = "MACRO5";
         };
         
         macro6: macro6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LEFT_ALT &kp H>;
-            label = "MACRO6";
+            // label = "MACRO6";
         };
     };
 
