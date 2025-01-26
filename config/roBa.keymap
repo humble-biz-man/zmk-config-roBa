@@ -58,37 +58,37 @@
         macro1: macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp G &kp A>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp G &kp A>;
         };
 
         macro2: macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp H>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp S &kp H>;
         };
 
         macro3: macro3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp F>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp S &kp F>;
         };
 
         macro4: macro4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp S &kp O>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp S &kp O>;
         };
 
         macro5: macro5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H &kp F &kp C>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H &kp F &kp C>;
         };
 
         macro6: macro6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_ALT &kp H>;
+            bindings = <&macro_tap>, <&kp LEFT_ALT &kp H>;
         };
     };
 
@@ -113,8 +113,6 @@
 &kp Z  &kp X             &kp C           &kp V  &kp B     &kp COLON          &mkp MB2       &kp N        &kp M  &kp COMMA  &kp DOT  &mkp MB1
 &mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2              &kp BACKSPACE  &lt 1 ENTER                             &mo 5
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
