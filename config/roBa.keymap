@@ -49,6 +49,42 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+        
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H &kp G &kp A>;
+        };
+        
+        macro2: macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp H>;
+        };
+        
+        macro3: macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp F>;
+        };
+        
+        macro4: macro4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H &kp S &kp O>;
+        };
+        
+        macro5: macro5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H &kp F &kp C>;
+        };
+        
+        macro6: macro6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LEFT_ALT &kp H>;
+        };
     };
 
     
