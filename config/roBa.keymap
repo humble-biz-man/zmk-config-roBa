@@ -108,10 +108,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                        &kp G     &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V                        &kp B     &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp MB1
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &mkp MB1  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &mkp MB2
+&kp Q  &kp W             &kp E           &kp R  &kp T                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A  &kp S             &kp D           &kp F  &kp G     &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp Z  &kp X             &kp C           &kp V  &kp B     &kp COLON          &mkp MB2       &kp N        &kp M  &kp COMMA  &kp DOT  &mkp MB1
+&mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2              &kp BACKSPACE  &lt 1 ENTER                             &mo 5
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -119,10 +119,10 @@
 
         FUNCTION {
             bindings = <
-&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6  &macro5                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&kp ESC        &macro4            &macro3          &macro2  &macro1  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp LEFT_GUI   &trans             &trans           &trans   &trans   &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans         &trans             &trans           &trans   &trans   &trans      &trans   &trans                          &kp F12
+&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6     &macro5                               &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
+&kp ESC        &macro4            &macro3          &macro2     &macro1        &trans      &kp F13    &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &kp F9     &kp BACKSPACE
+&kp LEFT_GUI   &kp LEFT_ALT       &kp TAB          &kp K_MENU  &kp LS(LG(S))  &trans      &trans     &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&trans         &kp LEFT_CONTROL   &kp LEFT_SHIFT   &trans      &trans         &trans      &kp ENTER  &kp SPACE                                             &kp PLUS
             >;
         };
 
