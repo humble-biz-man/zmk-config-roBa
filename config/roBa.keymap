@@ -137,10 +137,10 @@
 
         FUNCTION {
             bindings = <
-&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6     &macro5                                       &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
-&kp ESC        &macro4            &macro3          &macro2     &macro1        &trans              &trans     &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
-&kp LEFT_GUI   &kp LEFT_ALT       &kp TAB          &kp K_MENU  &kp LS(LG(S))  &kp LEFT_BRACE      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
-&trans         &kp LEFT_CONTROL   &kp LEFT_SHIFT   &trans      &trans         &trans              &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
+&kp LA(TILDE)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &macro6     &macro5                                       &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
+&kp ESC        &macro4           &macro3            &macro2     &macro1        &trans              &trans     &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
+&kp LEFT_GUI   &kp LEFT_ALT      &kp TAB            &kp K_MENU  &kp LS(LG(S))  &kp LEFT_BRACE      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans      &trans         &trans              &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
         };
 
