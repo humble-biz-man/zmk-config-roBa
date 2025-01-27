@@ -137,10 +137,10 @@
 
         FUNCTION {
             bindings = <
-&kp LA(AMPERSAND)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &macro6     &macro5                                        &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
-&kp ESC            &macro4           &macro3            &macro2     &macro1        &trans               &trans     &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
-&kp LEFT_GUI       &kp LEFT_ALT      &kp TAB            &kp K_MENU  &kp LS(LG(S))  &kp LS(AT_SIGN)      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
-&trans             &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans      &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
+&kp LA(TILDE)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &macro6     &macro5                                        &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
+&kp ESC        &macro4           &macro3            &macro2     &macro1        &trans               &trans     &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
+&kp LEFT_GUI   &kp LEFT_ALT      &kp TAB            &kp K_MENU  &kp LS(LG(S))  &kp LS(AT_SIGN)      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans      &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
         };
 
@@ -148,7 +148,7 @@
             bindings = <
 &kp NUMBER_9  &kp NUMBER_8      &kp NUMBER_7    &kp NUMBER_6  &kp NUMBER_5                      &kp LS(NUMBER_2)  &kp HASH         &kp PERCENT  &kp DOUBLE_QUOTES  &kp MINUS
 &kp NUMBER_4  &kp NUMBER_3      &kp NUMBER_2    &kp NUMBER_1  &kp NUMBER_0  &trans      &trans  &kp SEMICOLON     &kp QUESTION     &kp DOLLAR   &kp SLASH          &kp UNDER
-&kp PIPE      &kp GRAVE         &kp AMPERSAND   &kp CARET     &kp TILDE     &trans      &trans  &kp APOS          &kp EXCLAMATION  &kp INT_YEN  &kp LS(MINUS)      &kp AMPERSAND
+&kp PIPE      &kp GRAVE         &kp AMPERSAND   &kp CARET     &kp TILDE     &trans      &trans  &kp APOS          &kp EXCLAMATION  &kp INT_YEN  &kp LS(BACKSLASH)  &kp CARET
 &trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                                                             &kp LEFT_BRACKET
             >;
         };
