@@ -79,7 +79,7 @@
         macro7: macro7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp LS(P) &kp N0 &kp N7 &kp N9 &kp N9 &kp N5 &kp DQT &kp J &kp S &kp O &kp L &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp T &kp LS(P) &kp N0 &kp N7 &kp N9 &kp N9 &kp N5 &kp LEFT_BRACKET &kp J &kp S &kp O &kp L &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "MACRO7";
         };
 
@@ -128,10 +128,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W             &kp E           &kp R  &kp T                                               &kp Y           &kp U  &lt 5 I    &kp O    &kp P
-&kp A  &kp S             &kp D           &kp F  &kp G     &kp RIGHT_BRACKET      &kp RIGHT_BRACKET  &kp H           &kp J  &kp K      &kp L    &mkp MB2
-&kp Z  &kp X             &kp C           &kp V  &kp B     &kp ASTRK              &kp BACKSLASH      &kp N           &kp M  &kp COMMA  &kp DOT  &mkp MB1
-&mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL   &kp LEFT_SHIFT                             &mo 5
+&kp Q  &kp W             &kp E           &kp R  &kp T                                                  &kp Y           &kp U  &lt 5 I    &kp O    &kp P
+&kp A  &kp S             &kp D           &kp F  &kp G     &kp RIGHT_BRACKET      &kp BACKSLASH         &kp H           &kp J  &kp K      &kp L    &mkp MB2
+&kp Z  &kp X             &kp C           &kp V  &kp B     &kp ASTRK              &kp LEFT_PARENTHESIS  &kp N           &kp M  &kp COMMA  &kp DOT  &mkp MB1
+&mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL      &kp LEFT_SHIFT                             &mo 5
             >;
         };
 
