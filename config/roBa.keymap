@@ -128,28 +128,28 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W             &kp E           &kp R  &kp T                                                      &kp Y           &kp U  &lt 5 I    &kp O    &kp P
-&kp A  &kp S             &kp D           &kp F  &kp G     &kp RIGHT_BRACKET         &kp RIGHT_BRACKET      &kp H           &kp J  &kp K      &kp L    &mkp MB2
-&kp Z  &kp X             &kp C           &kp V  &kp B     &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &kp N           &kp M  &kp COMMA  &kp DOT  &mkp MB1
-&mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 2  &mkp MB1  &mo 2                     &kp LEFT_CONTROL       &kp LEFT_SHIFT                             &mo 5
+&kp Q  &kp W             &kp E           &kp R  &kp T                                                  &kp Y           &kp U  &lt 5 I    &kp O    &kp P
+&kp A  &kp S             &kp D           &kp F  &kp G     &kp RIGHT_BRACKET      &kp RIGHT_BRACKET     &kp H           &kp J  &kp K      &kp L    &mkp MB2
+&kp Z  &kp X             &kp C           &kp V  &kp B     &kp ASTRK              &kp LEFT_PARENTHESIS  &kp N           &kp M  &kp COMMA  &kp DOT  &mkp MB1
+&mo 5  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL      &kp LEFT_SHIFT                             &mo 5
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6     &macro5                                             &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
-&kp ESC        &macro4            &macro3          &macro2     &macro1        &trans              &trans           &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
-&kp LEFT_GUI   &kp LEFT_ALT       &kp TAB          &kp K_MENU  &kp LS(LG(S))  &kp LEFT_BRACE      &kp RIGHT_BRACE  &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
-&trans         &kp LEFT_CONTROL   &kp LEFT_SHIFT   &trans      &trans         &trans              &kp ENTER        &kp SPACE                                             &kp PLUS
+&kp LA(TILDE)  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &macro6     &macro5                                       &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
+&kp ESC        &macro4            &macro3          &macro2     &macro1        &trans              &trans     &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
+&kp LEFT_GUI   &kp LEFT_ALT       &kp TAB          &kp K_MENU  &kp LS(LG(S))  &kp LEFT_BRACE      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
+&trans         &kp LEFT_CONTROL   &kp LEFT_SHIFT   &trans      &trans         &trans              &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_9  &kp NUMBER_8      &kp NUMBER_7    &kp NUMBER_6  &kp NUMBER_5                      &kp DOUBLE_QUOTES  &kp HASH         &kp PERCENT    &kp ASTRK  &kp MINUS
-&kp NUMBER_4  &kp NUMBER_3      &kp NUMBER_2    &kp NUMBER_1  &kp NUMBER_0  &trans      &trans  &kp SEMICOLON      &kp QUESTION     &kp DOLLAR     &kp SLASH  &kp EQUAL
-&kp PIPE      &kp GRAVE         &kp APOS        &kp CARET     &kp TILDE     &trans      &trans  &kp LS(SEMICOLON)  &kp EXCLAMATION  &kp BACKSLASH  &kp UNDER  &kp AMPERSAND
-&trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                                                        &kp LEFT_BRACKET
+&kp NUMBER_9  &kp NUMBER_8      &kp NUMBER_7    &kp NUMBER_6  &kp NUMBER_5                      &kp DOUBLE_QUOTES  &kp HASH         &kp PERCENT    &kp DOUBLE_QUOTES  &kp MINUS
+&kp NUMBER_4  &kp NUMBER_3      &kp NUMBER_2    &kp NUMBER_1  &kp NUMBER_0  &trans      &trans  &kp SEMICOLON      &kp QUESTION     &kp DOLLAR     &kp SLASH          &kp LS(MINUS)
+&kp PIPE      &kp GRAVE         &kp AMPERSAND   &kp CARET     &kp TILDE     &trans      &trans  &kp APOS           &kp EXCLAMATION  &kp BACKSLASH  &kp UNDER          &kp AMPERSAND
+&trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                                                                &kp LEFT_BRACKET
             >;
         };
 
