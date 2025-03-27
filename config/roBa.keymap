@@ -122,13 +122,13 @@
             tapping-term-ms = <200>;
         };
 
-        mod_pg_up: sensor_rotate_kp {
+        mod_pg_up: mod_pg_up {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOD_PG_UP";
             #sensor-binding-cells = <2>;
             bindings = <&kp PAGE_UP>, <&msc SCRL_LEFT>;
         };
-        mod_pg_dn: sensor_rotate_kp {
+        mod_pg_dn: mod_pg_dn {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOD_PG_DN";
             #sensor-binding-cells = <2>;
