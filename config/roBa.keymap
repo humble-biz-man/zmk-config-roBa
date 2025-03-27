@@ -122,17 +122,17 @@
             tapping-term-ms = <200>;
         };
 
-        mod_pg_up: mod_pg_up {
-            compatible = "zmk,behavior-mod-morph";
+        mod_pg_up: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOD_PG_UP";
-            bindings = <&kp PAGE_UP>, <&kp WH_L>;
-            mods = <(MOD_LSFT)>;
+            #sensor-binding-cells = <2>;
+            bindings = <&kp PAGE_UP>, <&msc SCRL_LEFT>;
         };
-        mod_pg_dn: mod_pg_dn {
-            compatible = "zmk,behavior-mod-morph";
+        mod_pg_dn: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
             label = "MOD_PG_DN";
-            bindings = <&kp PAGE_DOWN>, <&kp WH_R>;
-            mods = <(MOD_LSFT)>;
+            #sensor-binding-cells = <2>;
+            bindings = <&kp PAGE_DOWN>, <&msc SCRL_RIGHT>;
         };
 
     };
