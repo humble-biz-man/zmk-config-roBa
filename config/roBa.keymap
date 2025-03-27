@@ -125,13 +125,13 @@
         mod_pg_up: mod_pg_up {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_PG_UP";
-            bindings = <&kp PAGE_UP>, <&kp SCROLL_LEFT>;
+            bindings = <&kp PAGE_UP>, <&kp WH_L>;
             mods = <(MOD_LSFT)>;
         };
         mod_pg_dn: mod_pg_dn {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_PG_DN";
-            bindings = <&kp PAGE_DOWN>, <&kp SCROLL_RIGHT>;
+            bindings = <&kp PAGE_DOWN>, <&kp WH_R>;
             mods = <(MOD_LSFT)>;
         };
 
