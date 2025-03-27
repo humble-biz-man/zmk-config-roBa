@@ -124,13 +124,11 @@
 
         mod_pg_up: mod_pg_up {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "MOD_PG_UP";
             #sensor-binding-cells = <2>;
             bindings = <&kp PAGE_UP>, <&msc SCRL_LEFT>;
         };
         mod_pg_dn: mod_pg_dn {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "MOD_PG_DN";
             #sensor-binding-cells = <2>;
             bindings = <&kp PAGE_DOWN>, <&msc SCRL_RIGHT>;
         };
@@ -159,7 +157,7 @@
 &trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans             &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
 
-            sensor-bindings = <&inc_dec_kp MOD_PG_UP MOD_PG_DN>;
+            sensor-bindings = <&inc_dec_kp mod_pg_up mod_pg_dn>;
         };
 
         NUM {
