@@ -121,6 +121,22 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        #追記
+        mod_pg_up: mod_pg_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_PG_UP";
+            bindings = <&kp PAGE_UP>, <&kp SCROLL_LEFT>;
+            mods = <(MOD_LSFT)>;
+        };
+        mod_pg_dn: mod_pg_dn {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_PG_DN";
+            bindings = <&kp PAGE_DOWN>, <&kp SCROLL_RIGHT>;
+            mods = <(MOD_LSFT)>;
+        };
+        #追記
+
     };
 
     keymap {
@@ -144,6 +160,8 @@
 &kp LEFT_GUI   &kp LEFT_ALT      &kp TAB            &kp K_APPLICATION  &kp LS(LG(S))  &kp RIGHT_BRACE      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
 &trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans             &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
+
+            sensor-bindings = <&inc_dec_kp MOD_PG_UP MOD_PG_DN>;　#追記
         };
 
         NUM {
