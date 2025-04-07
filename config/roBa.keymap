@@ -122,17 +122,6 @@
             tapping-term-ms = <200>;
         };
 
-        mod_pg_up: mod_pg_up {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp PAGE_UP>, <&msc SCRL_LEFT>;
-        };
-        mod_pg_dn: mod_pg_dn {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp PAGE_DOWN>, <&msc SCRL_RIGHT>;
-        };
-
     };
 
     keymap {
