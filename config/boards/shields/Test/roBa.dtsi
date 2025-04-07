@@ -62,10 +62,8 @@
 
 
 
-            //, <&key_physical_attrs 100 100  650  387 (-2000)   650   387>
-            //, <&key_physical_attrs 100 100  763  350 (-1000)     0   350>
-            , <&key_physical_attrs 100 100  650  387 -2000   650   387>
-            , <&key_physical_attrs 100 100  763  350 -1000     0   350>
+            , <&key_physical_attrs 100 100  650  387 (-2000)   650   387>
+            , <&key_physical_attrs 100 100  763  350 (-1000)     0   350>
 
             , <&key_physical_attrs 100 100 1200  337       0     0     0>
 
@@ -101,7 +99,7 @@
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <12>;
-        zmk,endcoder-resolusion = <4>;    // 追記
+        //zmk,endcoder-resolusion = <4>;    // 追記
         status = "disabled";
     };
 
