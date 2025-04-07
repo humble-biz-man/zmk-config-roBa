@@ -164,8 +164,6 @@
 &trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans             &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
 
-            sensor-bindings =
-                <&scroll_left_right>;
         };
 
         NUM {
@@ -175,6 +173,8 @@
 &kp PIPE      &kp GRAVE         &kp AMPERSAND   &kp CARET     &kp TILDE     &trans      &trans  &kp APOS          &kp EXCLAMATION  &kp INT_YEN  &kp LS(INTERNATIONAL_1)  &kp CARET
 &trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                                                                   &kp LEFT_BRACKET
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>
         };
 
         ARROW {
@@ -205,7 +205,8 @@
 &trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings =
+                <&scroll_left_right>;
         };
 
         layer_6 {
