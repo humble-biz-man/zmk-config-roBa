@@ -127,7 +127,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            
+
             tap-ms = <20>;
         };
 
@@ -138,7 +138,6 @@
 
             tap-ms = <20>;
         };
-
     };
 
     keymap {
@@ -152,8 +151,7 @@
 &mo 3  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL      &kp LEFT_SHIFT                             &mo 5
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -163,7 +161,6 @@
 &kp LEFT_GUI   &kp LEFT_ALT      &kp TAB            &kp K_APPLICATION  &kp LS(LG(S))  &kp RIGHT_BRACE      &kp PIPE   &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
 &trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans             &trans         &trans               &kp ENTER  &kp SPACE                                             &kp LS(SEMICOLON)
             >;
-
         };
 
         NUM {
@@ -179,7 +176,7 @@
 
         ARROW {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                                   &trans               &trans               &trans               &trans               &trans
+&bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                                   &bt BT_CLR           &trans               &trans               &trans               &trans
 &kp F10       &kp F7            &kp F5          &kp F4        &kp F2        &trans      &trans               &kp F1               &kp F3               &kp F6               &kp F8               &kp F9
 &macro11      &macro10          &macro9         &macro8       &macro7       &trans      &kp INTERNATIONAL_1  &kp INTERNATIONAL_2  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5  &kp INTERNATIONAL_6  &kp INTERNATIONAL_7
 &trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &kp INTERNATIONAL_8  &kp INTERNATIONAL_9                                                                 &trans
@@ -205,8 +202,7 @@
 &trans        &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans        &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings =
-                <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         layer_6 {
