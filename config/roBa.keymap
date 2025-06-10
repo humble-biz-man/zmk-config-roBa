@@ -142,7 +142,7 @@
         ht_mb2_layer5: behavior_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MB2_LAYER5";
-            bindings = <&mkp MB2>, <&mo 5>;
+            bindings = <&mkp MB2 &mo 5>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
