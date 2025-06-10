@@ -138,6 +138,14 @@
 
             tap-ms = <20>;
         };
+
+        ht_mb2_layer5: behavior_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MB2_LAYER5";
+            bindings = <&mkp MB2>, <&mo 5>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
     };
 
     keymap {
@@ -148,7 +156,7 @@
 &mo 3  &kp W             &kp E           &kp R  &kp T                                                  &kp Y           &kp U  &kp I      &kp O    &mkp MB2
 &kp Q  &kp S             &kp D           &kp F  &kp G     &kp RIGHT_BRACKET      &kp BACKSLASH         &kp H           &kp J  &kp K      &kp L    &kp P
 &kp A  &kp X             &kp C           &kp V  &kp B     &kp ASTRK              &kp LEFT_PARENTHESIS  &kp N           &kp M  &kp COMMA  &kp DOT  &mkp MB1
-&kp Z  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL      &kp LEFT_SHIFT                             &lt 5 MB2
+&kp Z  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 1  &mkp MB1  &mo 2                  &kp LEFT_CONTROL      &kp LEFT_SHIFT                             &ht_mb2_layer5
             >;
 
             sensor-bindings = <&scroll_up_down>;
