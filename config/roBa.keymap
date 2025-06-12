@@ -112,15 +112,6 @@
             label = "MACRO11";
         };
 
-        macro12: macro12 {
-            compatible = "zmk,behavior-macro";
-            label = "TOGGLE_IME";
-            bindings = <
-                &press LALT
-                &tap GRAVE
-                &release LALT
-            >;
-        };
     };
 
     behaviors {
@@ -174,7 +165,7 @@
 
         FUNCTION {
             bindings = <
-&macro12       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &macro6            &macro5                                                &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
+&kp LA(GRAVE)  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &macro6            &macro5                                                &kp LC(X)  &kp LC(D)       &kp LC(Y)       &kp LC(Z)  &kp DEL
 &kp ESC        &macro4           &macro3            &macro2            &macro1        &trans               &trans             &kp LC(C)  &kp LC(V)       &kp UP_ARROW    &trans     &kp BACKSPACE
 &kp LEFT_GUI   &kp LEFT_ALT      &kp TAB            &kp K_APPLICATION  &kp LS(LG(S))  &kp RIGHT_BRACE      &kp PIPE           &kp LC(G)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp MINUS
 &trans         &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans             &trans         &trans               &kp ENTER          &kp SPACE                                             &kp LS(SEMICOLON)
